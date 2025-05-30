@@ -19,9 +19,9 @@ const FourthStep = () => {
         <Button
           onClick={submitData}
           variant="contained"
-        
-        >
-          Create!!
+         className='primary-btn'
+        >   
+         Launch Eden
         </Button>
       </div>
     </div>

@@ -32,10 +32,12 @@ switch(id){
 }
 
   return (
-    <div> 
-    <h1 className='d-fl-center'>Eden</h1>
+    <div className='d-fl-center fl-column g-24'> 
+    <h1 style={{marginTop:'10%', gap:'8px !important' }} className='d-fl-center'>
+      <i style={{color:'#624ADD'}}className="fa-brands fa-envira"></i> <span style={{fontSize:'32px', fontWeight:'500'}}><b>Eden</b></span></h1>
     {/* <HorizontalLinearStepper className='d-fl-center'/> */}
-    <Stepper  activeStep={currentStep - 1} orientation='horizontal'>
+   
+    <Stepper style={{width:'420px', margin:'0 auto'}} activeStep={currentStep - 1} orientation='horizontal'>
       <Step>
          <StepLabel></StepLabel>
       </Step>
@@ -48,13 +50,9 @@ switch(id){
        <Step>
          <StepLabel></StepLabel>
       </Step>
-     
-    
     </Stepper>
      {showStep(currentStep)}
-    {/* <FirstStep />
-    <SecondStep />
-    <ThirdStep /> */}
+
    {finalData.length > 0 ? <DisplayData />: ''} 
     </div>
   )

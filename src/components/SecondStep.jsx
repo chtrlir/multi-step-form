@@ -16,7 +16,7 @@ const SecondStep = () => {
        <br />
       <Button onClick={()=> setStep(1)} variant="contained">Back</Button>       
        <br />
-      <Button onClick={()=> setStep(3)} variant="contained">Create Workspace</Button>
+      <Button  className='primary-btn' onClick={()=> setStep(3)} variant="contained">Create Workspace</Button>
 
     </div>
     </div>

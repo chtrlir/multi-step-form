@@ -8,9 +8,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
+   
 
+}
+
+.g-24{
+     gap:24px;
 }
 
 .fl-column{
     flex-direction: column;
+}
+
+.primary-btn{
+    background-color: #624ADD !important;
+    color: white !important;
+}
+
+
+.MuiStepIcon-root.Mui-active {
+  color:  #624ADD  !important;
+}
+
+.MuiStepIcon-root.Mui-completed {
+  color:  #624ADD  !important;
+}
+
+
+.MuiStepIcon-root {
+  color: grey  !important;
+}
+
+/* Default connector line color */
+.MuiStepConnector-root .MuiStepConnector-line {
+  border-color: grey !important; /* purple */
+}
+
+/* Connector line when active or completed */
+.MuiStepConnector-root.Mui-active .MuiStepConnector-line,
+.MuiStepConnector-root.Mui-completed .MuiStepConnector-line {
+  border-color: #624ADD !important; /* blue */
 }

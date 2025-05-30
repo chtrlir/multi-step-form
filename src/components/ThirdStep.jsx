@@ -46,7 +46,7 @@ const ThirdStep = () => {
         <br />
         <Button onClick={() => setStep(2)} variant="contained">Back</Button>
         <br />
-         <Button onClick={() => setStep(4)} variant="contained">Next</Button>
+         <Button   className='primary-btn' onClick={() => setStep(4)} variant="contained">Next</Button>
         {/* <Button
           onClick={submitData}
           variant="contained"
