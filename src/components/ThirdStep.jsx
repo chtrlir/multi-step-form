@@ -8,15 +8,10 @@ const ThirdStep = () => {
 
   const handleSelect = (type) => {
     setSelectedOption(type);
-    setUserData({ ...userData, usageType: type });
+    setUserData({ ...userData, 'usageType': type });
   };
 
-  const submitData = () => {
-    if (!selectedOption) return;
-    
-    console.log('Form Submitted:', userData);
-   
-  };
+
 
   return (
     <div>

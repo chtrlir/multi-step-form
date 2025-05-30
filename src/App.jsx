@@ -9,6 +9,7 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import { multistepContext } from './StepContext.jsx'
 import FourthStep from './components/FourthStep.jsx'
+import DisplayData from './components/DisplayData.jsx'
 
 
 function App() {
@@ -54,6 +55,7 @@ switch(id){
     {/* <FirstStep />
     <SecondStep />
     <ThirdStep /> */}
+   {finalData.length > 0 ? <DisplayData />: ''} 
     </div>
   )
 }
