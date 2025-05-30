@@ -14,8 +14,8 @@ const DisplayData = () => {
 
   return (
     <div>
-      <Table sx={{ width: '70%', marginLeft: '20%', marginTop: '50px' }} aria-label="simple table">
-        <TableHead sx={{ background: 'yellow' }}>
+      <Table sx={{  marginTop: '50px', overflow:'auto' }} aria-label="simple table">
+        <TableHead sx={{ background: '#dcdcdc', color:'white', fontFamily:'"Mona Sans", sans-serif;' }}>
           <TableRow>
             <TableCell>Fullname</TableCell>
             <TableCell align="right">Display Name</TableCell>

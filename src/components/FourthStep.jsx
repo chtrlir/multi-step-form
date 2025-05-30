@@ -1,31 +1,48 @@
-import React, { useContext, useState } from 'react';
-import { Card, CardContent, Typography, Button } from '@mui/material';
+import React, { useContext } from 'react';
+import { Button } from '@mui/material';
 import { multistepContext } from '../StepContext';
+import TextField from '@mui/material/TextField';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const FourthStep = () => {
-  const { setStep, userData, setUserData,submitData } = useContext(multistepContext);
- 
-  return (
-    <div>
-      <div className="d-fl-center fl-column">
-        <h1>Congratulations, {userData["firstName"]} !</h1>
-        <h3>You have completed onboarding, you can start using Eden</h3>
+    const { setStep, userData, submitData } = useContext(multistepContext);
 
-       
-        <br />
-        <Button onClick={() => setStep(2)} variant="contained">Back</Button>
-        <br />
-      
-        <Button
-          onClick={submitData}
-          variant="contained"
-         className='primary-btn'
-        >   
-         Launch Eden
-        </Button>
-      </div>
-    </div>
-  );
+    return (
+        <div className="d-fl-center fl-column" style={{ gap: '24px', width: '100%', maxWidth: '500px', textAlign: 'center' }}>
+
+            <CheckCircleOutlineIcon sx={{ fontSize: 60, color: '#624ADD' }} />
+
+            <div style={{ fontSize: '24px', fontWeight: '700' }}>
+                Congratulations, {userData.firstName}!
+            </div>
+
+            <div style={{ fontSize: '16px', color: 'grey' }}>
+                You have completed onboarding. You can start using Eden!
+            </div>
+
+            <div style={{ width: '100%', marginTop: '24px' }}>
+                <Button
+                    onClick={submitData}
+                    variant="contained"
+                    sx={{
+                        width: '100%',
+                        mt: 2,
+                        textTransform: 'none',
+                        borderRadius: '12px',
+                        padding: '10px 16px',
+                        fontWeight: '300',
+                        fontSize: '16px',
+                        background: '#624ADD',
+                        color: '#fff',
+                    }}
+                >
+                    Launch Eden
+                </Button>
+            </div>
+
+        </div>
+    );
 };
 
 export default FourthStep;

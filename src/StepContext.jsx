@@ -16,6 +16,7 @@ const StepContext = ({ children }) => {
       );
       setFinalData(updated);
       setEditId(null); 
+         alert('Edited successfully');
     } else {
       
       const newId = finalData.length > 0 ? finalData[finalData.length - 1].id + 1 : 1;
@@ -33,12 +34,14 @@ const StepContext = ({ children }) => {
       setUserData(record);
       setEditId(id);
       setStep(1); 
+     
     }
   };
 
   const deleteData = (id) => {
     const filtered = finalData.filter(item => item.id !== id);
     setFinalData(filtered);
+    alert('Deleted Successfully')
   };
 
   return (

@@ -37,7 +37,7 @@ switch(id){
       <i style={{color:'#624ADD'}}className="fa-brands fa-envira"></i> <span style={{fontSize:'32px', fontWeight:'500'}}><b>Eden</b></span></h1>
     {/* <HorizontalLinearStepper className='d-fl-center'/> */}
    
-    <Stepper style={{width:'420px', margin:'0 auto'}} activeStep={currentStep - 1} orientation='horizontal'>
+    <Stepper style={{maxWidth:'420px', margin:'0 auto', minWidth:'240px'}} activeStep={currentStep - 1} orientation='horizontal'>
       <Step>
          <StepLabel></StepLabel>
       </Step>
