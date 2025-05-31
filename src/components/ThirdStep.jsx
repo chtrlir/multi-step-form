@@ -67,7 +67,8 @@ const ThirdStep = () => {
                                     ? '2px solid #624ADD'
                                     : '1px solid #ccc',
                             cursor: 'pointer',
-                            width: 250,
+                            maxWidth: 190,
+                            minWidth:100,
                             transition: '0.3s',
                         }}
                     >
@@ -76,8 +77,9 @@ const ThirdStep = () => {
                                 {type}
                             </Typography>
                             <Typography variant="body2" align="center">
+                               
                                 {type === 'For myself'
-                                    ? 'Write better. Think more clearly. Stay organized.'
+                                    ? `Write better. Think more clearly. Stay organized.`
                                     : 'Bring your team together and build collective knowledge.'}
                             </Typography>
                         </CardContent>

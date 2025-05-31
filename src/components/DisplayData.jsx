@@ -13,8 +13,8 @@ const DisplayData = () => {
   const { finalData, editData, deleteData } = useContext(multistepContext);
 
   return (
-    <div>
-      <Table sx={{  marginTop: '50px', overflow:'auto' }} aria-label="simple table">
+    <div style={{overflow:'auto'}}>
+      <Table sx={{ width:'800px', marginTop: '50px', overflowX:'auto' }} aria-label="simple table">
         <TableHead sx={{ background: '#dcdcdc', color:'white', fontFamily:'"Mona Sans", sans-serif;' }}>
           <TableRow>
             <TableCell>Fullname</TableCell>
